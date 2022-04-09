@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7SaCXA+bwPilq9sGDxPhTDH46T5nEPT/Ho6eTa2C9xW5tZJmt2ZlRqW4B2J4oNlvMGkpaAyCGZ9btDMQCvKpkA==",
+  "dgSpecHash": "LvvVWNTk2JlWkeR7Q8lL4DVNiyZIE8dtXt6ddHIbEt9WSVsXSrXve/GBNW1kvozZk4WDTDZaB+v0W6fztSerpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Oda\\source\\repos\\InterfazRes\\InterfazRes\\InterfazRes.iOS\\InterfazRes.iOS.csproj",
+  "projectFilePath": "C:\\Users\\ESTUDIANTE\\Source\\Repos\\CuchosParrillaProject\\InterfazRes\\InterfazRes.iOS\\InterfazRes.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Oda\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\ESTUDIANTE\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],

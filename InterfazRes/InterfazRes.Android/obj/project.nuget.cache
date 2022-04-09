@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ccDhHmY7uNViScACxYtZ5YcrqhdD4OCAc3McdYdKOH270RGyC3XqUZ5Pt1XUypIran8H7X58dPG86uhlLgrp/A==",
+  "dgSpecHash": "zJaWIpzdls6TEzyqf/SaMyW1ZCHCwg1kmmCO0WAiiaw2MQTTzNIoXCWndCED2a82gFWIdJOzzaiDRCxoCT/ggg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Oda\\source\\repos\\InterfazRes\\InterfazRes\\InterfazRes.Android\\InterfazRes.Android.csproj",
+  "projectFilePath": "C:\\Users\\ESTUDIANTE\\Source\\Repos\\CuchosParrillaProject\\InterfazRes\\InterfazRes.Android\\InterfazRes.Android.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Oda\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\ESTUDIANTE\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation.experimental\\1.0.0.8\\xamarin.androidx.annotation.experimental.1.0.0.8.nupkg.sha512",
