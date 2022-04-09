@@ -34,7 +34,7 @@
             <StackLayout HorizontalOptions="Center" Spacing="15">
                 <Label Text="¿Tienes hambre?" TextColor="White" FontSize="18" HorizontalOptions="Center" />
                 <Label Text="No esperes más!" TextColor="White" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center" />
-                <Button Text="Ordene Ahora" TextColor="White" BackgroundColor="#FFBE00" WidthRequest="150" HeightRequest="46" 
+                <Button Text="Ordene Ahora" TextColor="White" BackgroundColor="Orange" WidthRequest="150" HeightRequest="46" 
                         CornerRadius="23" HorizontalOptions="Center" Command="{Binding OrderCommand}"/>
             </StackLayout>
         </StackLayout>
