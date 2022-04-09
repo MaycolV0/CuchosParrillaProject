@@ -1,0 +1,16 @@
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\bin\Debug\netstandard2.0\InterfazRes.deps.json
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\bin\Debug\netstandard2.0\InterfazRes.dll
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\bin\Debug\netstandard2.0\ref\InterfazRes.dll
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\bin\Debug\netstandard2.0\InterfazRes.pdb
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\obj\Debug\netstandard2.0\InterfazRes.csproj.AssemblyReference.cache
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\obj\Debug\netstandard2.0\InterfazRes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\obj\Debug\netstandard2.0\InterfazRes.AssemblyInfoInputs.cache
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\obj\Debug\netstandard2.0\InterfazRes.AssemblyInfo.cs
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\obj\Debug\netstandard2.0\InterfazRes.csproj.CoreCompileInputs.cache
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\obj\Debug\netstandard2.0\InterfazRes.dll
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\obj\Debug\netstandard2.0\ref\InterfazRes.dll
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\obj\Debug\netstandard2.0\InterfazRes.pdb
+C:\Users\Ander\source\repos\InterfazRes\InterfazRes\InterfazRes\obj\Debug\netstandard2.0\OrderPage.xaml.g.cs
