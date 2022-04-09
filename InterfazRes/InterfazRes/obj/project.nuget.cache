@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QykGqfSaGKCzF+Wj/HvWhQVtM4UACDTzJAW+WbVGyaqUObHooQgSuRmaFCJFRXWdIregdwczxS5uscxCKO6BeQ==",
+  "dgSpecHash": "TImfdUkI2mpS3O+XMbZmv/yDAORqOgb9GVL18dSlAM0Wx8piVGafkAfR90iv0cG+uCbatjLEokMjeBbGs0tSeA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ESTUDIANTE\\Source\\Repos\\CuchosParrillaProject\\InterfazRes\\InterfazRes\\InterfazRes.csproj",
+  "projectFilePath": "C:\\Users\\Ander\\source\\repos\\InterfazRes\\InterfazRes\\InterfazRes\\InterfazRes.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ESTUDIANTE\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\ESTUDIANTE\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\ESTUDIANTE\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Ander\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Ander\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Ander\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
