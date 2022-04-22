@@ -8,56 +8,84 @@
         <vm:MainViewModel x:Name="vm" />
     </ContentPage.BindingContext>
 
-    <Grid RowDefinitions="*, 2*, Auto">
-        <BoxView Grid.RowSpan="3">
-            <BoxView.Background>
-                <LinearGradientBrush>
-                    <GradientStopCollection>
-                        <GradientStop Color="#161616" Offset="0"/>
-                        <GradientStop Color="#30343F" Offset="1"/>
-                    </GradientStopCollection>
-                </LinearGradientBrush>
-            </BoxView.Background>
-        </BoxView>
-        <Grid>
-            <Path Data="M0,0H375V262.033s-9.025,4.813-55.426-10.71-70.141-83.047-130.3-83.22-83.544,67.7-130.893,83.22S0,262.033,0,262.033Z" 
-                  Aspect="Fill" Fill="#FA9038"/>
-            <Image Source="menu.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="25"/>
-            <Image Source="search.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="End" VerticalOptions="Start" Margin="25" />
+    <ScrollView>
+        <!-- Grid Definition -->
+        <Grid RowDefinitions="*, 2*, Auto">
+            <BoxView Grid.RowSpan="3">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStopCollection>
+                            <GradientStop Color="#161616" Offset="0"/>
+                            <GradientStop Color="#30343F" Offset="1"/>
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
 
-        </Grid>
-        <StackLayout Grid.Row="1" HorizontalOptions="Center" Margin="0,-140,0,0" Spacing="30">
-            <Grid HeightRequest="210" WidthRequest="210" HorizontalOptions="Center">
-                <Ellipse Stroke="white" StrokeThickness="2" Aspect="Fill"/>
-                <Image x:Name="BannerImg" Source="IMG02.png" HeightRequest="195" WidthRequest="195" HorizontalOptions="Center" VerticalOptions="Center"/>
+            
+            <Grid>
+                <Path Data="M0,0H375V262.033s-9.025,4.813-55.426-10.71-70.141-83.047-130.3-83.22-83.544,67.7-130.893,83.22S0,262.033,0,262.033Z" 
+                      Aspect="Fill" Fill="#FA9038"/>
+                <Image Source="menu.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="25"/>
+                <Image Source="search.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="End" VerticalOptions="Start" Margin="25" />
             </Grid>
-            <StackLayout HorizontalOptions="Center" Spacing="15">
-                <Label Text="¿Antojado?" TextColor="White" FontSize="18" HorizontalOptions="Center" />
-                <Label Text="No lo pienses más!" TextColor="White" FontSize="40" FontAttributes="Bold" HorizontalOptions="Center" />
-                <Button Text="Ordene Ahora" TextColor="White" BackgroundColor="#FA9038" WidthRequest="150" HeightRequest="46" 
-                        CornerRadius="23" HorizontalOptions="Center" Command="{Binding OrderCommand}"/>
+
+            <!-- Title ***in process*** 
+            <StackLayout Grid.Row="1" Margin="25,0,0,25" Spacing="10">
+                <Label Text="CUCHOS PARRILLA" HorizontalOptions="Center" VerticalOptions="Start" TextColor="White" FontSize="40" FontAttributes="Bold"/>
             </StackLayout>
-        </StackLayout>
-        <StackLayout Grid.Row="2" Margin="25,0,0,25" Spacing="10">
-            <Label Text="Combos" FontAttributes="Bold" TextColor="White" Opacity="0.5" FontSize="14"/>
-            <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
-                <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding Picks}" Spacing="30">
-                    <BindableLayout.ItemTemplate>
-                        <DataTemplate>
-                            <Grid ColumnDefinitions="Auto, Auto" ColumnSpacing="15">
-                                <Rectangle Fill="#A5A5A5" VerticalOptions="Center" WidthRequest="87" HeightRequest="40"/>
-                                <Image Source="{Binding Image}" WidthRequest="75" HeightRequest="75" HorizontalOptions="Center" VerticalOptions="Center"/>
-                                <StackLayout Grid.Column="1" Spacing="5" WidthRequest="115">
-                                    <Label Text="{Binding Title}" TextColor="White" FontSize="12" FontAttributes="Bold" />
-                                    <Label Text="{Binding Description}" TextColor="White" FontSize="10" />
-                                </StackLayout>
-                            </Grid>
-                        </DataTemplate>
-                    </BindableLayout.ItemTemplate>
+            -->
+            
+            <!-- Welcome Message -->
+            <StackLayout Grid.Row="1" HorizontalOptions="Center" Margin="0,-140,0,0" Spacing="10">
+                <Grid HeightRequest="210" WidthRequest="210" HorizontalOptions="Center">
+                    <Ellipse Stroke="white" StrokeThickness="2" Aspect="Fill"/>
+                    <Image x:Name="BannerImg" Source="IMG02.png" HeightRequest="195" WidthRequest="195" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Grid>
+                <StackLayout HorizontalOptions="Center" Spacing="15">
+                    <Label Text="¿Antojado?" TextColor="White" FontSize="18" HorizontalOptions="Center" />
+                    <Label Text="No lo pienses más!" TextColor="White" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <Button Text="Ordene Ahora" TextColor="White" BackgroundColor="#FA9038" WidthRequest="150" HeightRequest="46" 
+                            CornerRadius="23" HorizontalOptions="Center" Command="{Binding OrderCommand}"/>
                 </StackLayout>
-            </ScrollView>
-        </StackLayout>
-    </Grid>
+            </StackLayout>
+
+            <!-- Combos List -->
+            <StackLayout Grid.Row="2" Margin="25,0,0,25" Spacing="0">
+                <Label Text="Combos" FontAttributes="Bold" TextColor="White" Opacity="0.5" FontSize="14"/>
+                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                    <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding Picks}" Spacing="30">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Grid ColumnDefinitions="Auto, Auto" ColumnSpacing="15">
+                                    <Rectangle Fill="#A5A5A5" VerticalOptions="Center" WidthRequest="87" HeightRequest="40"/>
+                                    <Image Source="{Binding Image}" WidthRequest="75" HeightRequest="75" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <StackLayout Grid.Column="1" Spacing="5" WidthRequest="115">
+                                        <Label Text="{Binding Title}" TextColor="White" FontSize="12" FontAttributes="Bold" />
+                                        <Label Text="{Binding Description}" TextColor="White" FontSize="10" />
+                                    </StackLayout>
+                                </Grid>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <!-- Footer -->
+            <StackLayout Grid.Row="3" Margin="25,0,0,25" Spacing="0">
+                <Label FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Escríbenos en: "/>
+                                <Span Text="https://api.whatsapp.com/cuchosparrilla" FontAttributes="Bold" TextColor="Blue" TextDecorations="Underline"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
 </ContentPage>
 
 
