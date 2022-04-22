@@ -24,12 +24,21 @@ namespace InterfazRes.viewModel
             {
                 new Pick
                 {
-                    Title = "Desayuno", Image = "IMG01.png", Description = "Ordene un desayuno europeo"
+                    Title = "Burgers", Image = "https://imgur.com/4ungu9J.png", Description = "Ordene una hamburguesa clásica o vegana!!"
                 },
                 new Pick
                 {
-                    Title = "Almuerzo", Image = "IMG03.png", Description = "Ordene un almuerzo europeo" }
-                };
+                    Title = "Pollo", Image = "https://imgur.com/aWv6nPS.png", Description = "Ordene pollo asado, apanado o teriyaki!"
+                },
+                new Pick
+                {
+                    Title = "Tex-Mex", Image = "https://imgur.com/5w8iLhO.png", Description = "Ordene unos tacos!"
+                },
+                new Pick
+                {
+                    Title = "Crepes", Image = "https://imgur.com/yI3IZpT.png", Description = "Ordene un crepe!"
+                }
+            };
         }
     }
 

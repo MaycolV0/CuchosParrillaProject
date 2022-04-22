@@ -991,26 +991,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Oda\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Maycol\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Oda\\source\\repos\\InterfazRes\\InterfazRes\\InterfazRes.iOS\\InterfazRes.iOS.csproj",
+      "projectUniqueName": "D:\\Maycol\\Documents\\GitHub\\CuchosParrillaProject\\InterfazRes\\InterfazRes.iOS\\InterfazRes.iOS.csproj",
       "projectName": "InterfazRes.iOS",
-      "projectPath": "C:\\Users\\Oda\\source\\repos\\InterfazRes\\InterfazRes\\InterfazRes.iOS\\InterfazRes.iOS.csproj",
-      "packagesPath": "C:\\Users\\Oda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Oda\\source\\repos\\InterfazRes\\InterfazRes\\InterfazRes.iOS\\obj\\",
+      "projectPath": "D:\\Maycol\\Documents\\GitHub\\CuchosParrillaProject\\InterfazRes\\InterfazRes.iOS\\InterfazRes.iOS.csproj",
+      "packagesPath": "C:\\Users\\Maycol\\.nuget\\packages\\",
+      "outputPath": "D:\\Maycol\\Documents\\GitHub\\CuchosParrillaProject\\InterfazRes\\InterfazRes.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Oda\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Maycol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1022,8 +1017,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Oda\\source\\repos\\InterfazRes\\InterfazRes\\InterfazRes\\InterfazRes.csproj": {
-              "projectPath": "C:\\Users\\Oda\\source\\repos\\InterfazRes\\InterfazRes\\InterfazRes\\InterfazRes.csproj"
+            "D:\\Maycol\\Documents\\GitHub\\CuchosParrillaProject\\InterfazRes\\InterfazRes\\InterfazRes.csproj": {
+              "projectPath": "D:\\Maycol\\Documents\\GitHub\\CuchosParrillaProject\\InterfazRes\\InterfazRes\\InterfazRes.csproj"
             }
           }
         }
