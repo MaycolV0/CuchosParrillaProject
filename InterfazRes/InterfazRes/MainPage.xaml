@@ -10,7 +10,7 @@
 
     <ScrollView>
         <!-- Grid Definition -->
-        <Grid RowDefinitions="*, 2*, Auto">
+        <Grid RowDefinitions="*, Auto, Auto, Auto">
             <BoxView Grid.RowSpan="4">
                 <BoxView.Background>
                     <LinearGradientBrush>
@@ -52,7 +52,7 @@
             </StackLayout>
 
             <!-- Combos List -->
-            <StackLayout Grid.Row="2" Margin="25,0,0,25" Spacing="0">
+            <StackLayout Grid.Row="2" Margin="25,100,0,25" Spacing="0">
                 <Label Text="Combos" FontAttributes="Bold" TextColor="Black" FontSize="14"/>
                 <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                     <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding Picks}" Spacing="30">
@@ -79,7 +79,7 @@
                         <FormattedString>
                             <FormattedString.Spans>
                                 <Span Text="Escríbenos en: "/>
-                                <Span Text="https://api.whatsapp.com/cuchosparrilla" FontAttributes="Bold" TextColor="Blue" TextDecorations="Underline"/>
+                                <Span Text="https://api.whatsapp.com/cuchosparrilla" FontAttributes="Bold" TextColor="#6D3C11" TextDecorations="Underline"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
