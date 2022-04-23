@@ -43,8 +43,9 @@
                     <Image x:Name="BannerImg" Source="IMG02.png" HeightRequest="195" WidthRequest="195" HorizontalOptions="Center" VerticalOptions="Center"/>
                 </Grid>
                 <StackLayout HorizontalOptions="Center" Spacing="15">
+                    <Label Text="Bienvenido a Cuchos Parrilla" TextColor="Black" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" />
                     <Label Text="¿Antojado?" TextColor="Black" FontSize="18" HorizontalOptions="Center" />
-                    <Label Text="No lo pienses más!" TextColor="Black" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <Label Text="No lo pienses más!" TextColor="Black" FontSize="18" HorizontalOptions="Center" />
                     <Button Text="Ordene Ahora" TextColor="White" BackgroundColor="#6D3C11" WidthRequest="150" HeightRequest="46" 
                             CornerRadius="23" HorizontalOptions="Center" Command="{Binding OrderCommand}"/>
                 </StackLayout>
