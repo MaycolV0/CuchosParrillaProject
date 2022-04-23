@@ -13,6 +13,7 @@ namespace InterfazRes
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             Task.Run(RotateImage);
         }
         private async void RotateImage()
