@@ -11,7 +11,7 @@
     <ScrollView>
         <!-- Grid Definition -->
         <Grid RowDefinitions="*, 2*, Auto">
-            <BoxView Grid.RowSpan="3">
+            <BoxView Grid.RowSpan="4">
                 <BoxView.Background>
                     <LinearGradientBrush>
                         <GradientStopCollection>
