@@ -13,7 +13,7 @@ namespace InterfazRes.viewModel
             MenuList = GetMenu();
         }
         public List<Pick> MenuList { get; set; }
-        //public ICommand BackCommand => new Command(() => ApplicationException.Current.MainPage.Navigation.PopAsync());
+        public ICommand BackCommand => new Command(() => Application.Current.MainPage.Navigation.PushModalAsync(new MainPage()));
 
         public List<Pick> GetMenu()
         {

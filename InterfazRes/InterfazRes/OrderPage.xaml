@@ -43,8 +43,8 @@
                             </StackLayout>
                             <StackLayout Grid.Row="2" Spacing="20" Padding="20" VerticalOptions="End">
                                 <Label Text="{Binding Price}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center"/>
-                                <Button Text="Agregar" TextColor="Black" BackgroundColor="#EBE1C9" WidthRequest="100" HeightRequest="40"
-                                        CornerRadius="20" HorizontalOptions="Center"/>
+                                <Button x:Name="btnAgregar" Text="Agregar" TextColor="Black" BackgroundColor="#EBE1C9" WidthRequest="100" HeightRequest="40"
+                                        CornerRadius="20" HorizontalOptions="Center" Clicked="btnAgregar_Clicked"/>
                             </StackLayout>
                         </Grid>
                         <Grid HeightRequest="210" WidthRequest="210" VerticalOptions="Start" HorizontalOptions="Center">

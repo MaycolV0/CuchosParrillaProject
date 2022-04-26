@@ -31,5 +31,10 @@ namespace InterfazRes
                 }
             }
         }
+
+        private async void btnAgregar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new PedidoAgregar());
+        }
     }
 }

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:InterfazRes.viewModel"
+             x:Class="InterfazRes.PedidoAgregar">
+
+    <ContentPage.BindingContext>
+        <vm:MainViewModel x:Name="vm" />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <Grid RowDefinitions="*, Auto, Auto, Auto">
+            <BoxView Grid.RowSpan="4">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStopCollection>
+                            <GradientStop Color="#EBE1C9" Offset="0"/>
+                            <GradientStop Color="#EBE1C9" Offset="1"/>
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+
+            <Grid>
+                <Path Data="M0,0H375V262.033s-9.025,4.813-55.426-10.71-70.141-83.047-130.3-83.22-83.544,67.7-130.893,83.22S0,262.033,0,262.033Z" 
+                      Aspect="Fill" Fill="#6D3C11"/>
+            </Grid>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
