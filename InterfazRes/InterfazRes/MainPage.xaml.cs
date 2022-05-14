@@ -23,5 +23,16 @@ namespace InterfazRes
                 await BannerImg.RelRotateTo(369, 10000, Easing.Linear);
             }
         }
+
+        private async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new PedidoAgregar());
+        }
+
+        [Obsolete]
+        private void BtnUrl_Clicked(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://wa.me/+573046580943/?text=Hola"));
+        }
     }
 }

@@ -59,7 +59,7 @@
                             <DataTemplate>
                                 <Grid ColumnDefinitions="Auto, Auto" ColumnSpacing="15">
                                     <Rectangle Fill="#6D3C11" VerticalOptions="Center" WidthRequest="87" HeightRequest="40"/>
-                                    <Image Source="{Binding Image}" WidthRequest="75" HeightRequest="75" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <ImageButton Source="{Binding Image}" WidthRequest="75" HeightRequest="75" HorizontalOptions="Center" VerticalOptions="Center" Clicked="ImageButton_Clicked" BackgroundColor="Transparent"/>
                                     <StackLayout Grid.Column="1" Spacing="5" WidthRequest="115">
                                         <Label Text="{Binding Title}" TextColor="Black" FontSize="12" FontAttributes="Bold" />
                                         <Label Text="{Binding Description}" TextColor="Black" FontSize="10" />
@@ -72,21 +72,10 @@
             </StackLayout>
 
             <!-- Footer -->
-            <StackLayout Grid.Row="3" Margin="25,0,0,25" Spacing="0">
-                <Label FontSize="16">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="Escríbenos en: "/>
-                                <Span Text="https://api.whatsapp.com/cuchosparrilla" FontAttributes="Bold" TextColor="#6D3C11" TextDecorations="Underline"/>
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
+            <StackLayout Grid.Row="3" Margin="25,0,0,0" Spacing="0">
+                <Label  Text="Escríbenos en nuestro: " FontSize="16"/>
+                <Button x:Name="BtnUrl" Text="Link Whatsapp" TextTransform="Default" Font="Bold, 20" TextColor="#6D3C11" BackgroundColor="Transparent" Clicked="BtnUrl_Clicked" />
             </StackLayout>
         </Grid>
     </ScrollView>
 </ContentPage>
-
-
-
