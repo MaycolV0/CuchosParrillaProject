@@ -5,11 +5,11 @@
              x:Class="InterfazRes.PedidoAgregar">
 
     <ContentPage.BindingContext>
-        <vm:MainViewModel x:Name="vm" />
+        <vm:OrderViewModel x:Name="vm" />
     </ContentPage.BindingContext>
 
     <ScrollView>
-        <Grid RowDefinitions="*, Auto, Auto, Auto">
+        <Grid RowDefinitions="Auto, Auto, Auto, Auto">
             <BoxView Grid.RowSpan="4">
                 <BoxView.Background>
                     <LinearGradientBrush>
@@ -25,6 +25,40 @@
                 <Path Data="M0,0H375V262.033s-9.025,4.813-55.426-10.71-70.141-83.047-130.3-83.22-83.544,67.7-130.893,83.22S0,262.033,0,262.033Z" 
                       Aspect="Fill" Fill="#6D3C11"/>
             </Grid>
+
+            <StackLayout Grid.Row="0" HorizontalOptions="Center" Margin="45,0,45,0" Spacing="10">
+                <Label TextColor="Black" FontAttributes="Bold" Text="Datos del pedido" HorizontalOptions="Center" FontSize="25"/>
+                <Entry x:Name="EntryDireccion" Placeholder="Dirección del domicilio" HorizontalTextAlignment="Center" TextColor="Black" PlaceholderColor="#EBE1C9"/>
+                <Entry x:Name="EntryDevuelta" Placeholder="Devuelta de..." Keyboard="Telephone" HorizontalTextAlignment="Center" TextColor="black" PlaceholderColor="#EBE1C9"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1">
+                <Picker Title="Selecciona tu Bebida" TitleColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Agua</x:String>
+                            <x:String>Coca Cola</x:String>
+                            <x:String>Sprite</x:String>
+                            <x:String>Cuatro</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" HorizontalOptions="Center" Margin="45,0,45,0" Spacing="10">
+                <TableView>
+                    <TableRoot>
+                        <TableSection Title="Salsas">
+                            <SwitchCell Text="Tomate" />
+                            <SwitchCell Text="Rosada" />
+                            <SwitchCell Text="Piña" />
+                            <SwitchCell Text="BBQ" />
+                            <SwitchCell Text="Ajo" />
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+            </StackLayout>
+            
         </Grid>
     </ScrollView>
 

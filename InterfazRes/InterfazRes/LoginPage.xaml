@@ -10,7 +10,7 @@
                     <Image Source="https://aumentada.net/wp-content/uploads/2015/05/user.png" HeightRequest="140" WidthRequest="140" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
                     <Label TextColor="#6D3C11" FontAttributes="Bold" Text="Iniciar Sesión" HorizontalOptions="CenterAndExpand" FontSize="25"/>
                     <Entry x:Name="EntryNombre" Placeholder="Nombre Usuario" HorizontalTextAlignment="Center" TextColor="#6D3C11" PlaceholderColor="#6D3C11"/>
-                    <Entry x:Name="EntryCorreo" Placeholder="Correo electronico" HorizontalTextAlignment="Center" TextColor="#6D3C11" PlaceholderColor="#6D3C11"/>
+                    <Entry x:Name="EntryCorreo" Placeholder="Correo electronico" Keyboard="Email" HorizontalTextAlignment="Center" TextColor="#6D3C11" PlaceholderColor="#6D3C11"/>
                     <Entry x:Name="EntryNumero" Keyboard="Telephone" Placeholder="Numero de Contacto" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#6D3C11" PlaceholderColor="#6D3C11" />
                     <Button x:Name="Login" Clicked="Login_Clicked" FontSize="Medium" TextColor="#EBE1C9" BorderColor="Black" BackgroundColor="#6D3C11" CornerRadius="15" HorizontalOptions="CenterAndExpand" Text="Iniciar sesión"></Button>
                     <!-- <Label x:Name="OlvidoPassword" Text="¿Olvidó su contraseña?" TextColor="#6D3C11" FontSize="15" BackgroundColor="Transparent" HorizontalOptions="Center"/> -->
