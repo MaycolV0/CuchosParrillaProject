@@ -1,4 +1,6 @@
-﻿using System;
+﻿using InterfazRes.Data;
+using System;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -6,12 +8,26 @@ namespace InterfazRes
 {
     public partial class App : Application
     {
+
+        static SQLiteHelper db;
         public App()
         {
             InitializeComponent();
 
             MainPage = new NavigationPage(new LoginPage());
         }
+
+        public static SQLiteHelper SQLiteDB
+        {
+            get
+            {
+                if(db == null)
+                {
+                    db = new SQLiteHelper(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "CuchosParrilla.db3"));
+                }
+            }
+        }
+
 
         protected override void OnStart()
         {

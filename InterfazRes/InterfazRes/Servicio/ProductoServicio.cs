@@ -15,7 +15,7 @@ namespace InterfazRes.Servicio
             set;
         }
 
-        public ProductoServicio()
+        /*public ProductoServicio()
         {
             if (this.productos == null)
             { 
@@ -48,7 +48,7 @@ namespace InterfazRes.Servicio
         {
             ProductoModel modelo = productos.FirstOrDefault(p => p.Id == idProducto);
             productos.Remove(modelo);
-        }
+        }*/
 
         public static implicit operator ProductoServicio(ProductoModel v)
         {
