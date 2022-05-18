@@ -25,6 +25,7 @@ namespace InterfazRes
                 {
                     db = new SQLiteHelper(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "CuchosParrilla.db3"));
                 }
+                return db;
             }
         }
 
