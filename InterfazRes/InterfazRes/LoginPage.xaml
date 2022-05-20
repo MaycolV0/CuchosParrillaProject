@@ -2,19 +2,51 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="InterfazRes.LoginPage">
+
     <ContentPage.Content>
         <ScrollView>
             <StackLayout BackgroundColor="#6D3C11">
                 <StackLayout Margin="45" BackgroundColor="#EBE1C9" Spacing="25">
                     <Label Text=""></Label>
                     <Image Source="https://aumentada.net/wp-content/uploads/2015/05/user.png" HeightRequest="140" WidthRequest="140" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
-                    <Label TextColor="#6D3C11" FontAttributes="Bold" Text="Iniciar Sesión" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                    <Label Margin="15,0,15,0" TextColor="Black" FontAttributes="Bold" Text="Cuchos Parrilla" HorizontalOptions="Center" FontSize="25"/>
+                    <Entry x:Name="EntryIdUsuario" IsVisible="False" />
                     <Entry x:Name="EntryNombre" Placeholder="Nombre Usuario" HorizontalTextAlignment="Center" TextColor="#6D3C11" PlaceholderColor="#6D3C11"/>
                     <Entry x:Name="EntryCorreo" Placeholder="Correo electronico" Keyboard="Email" HorizontalTextAlignment="Center" TextColor="#6D3C11" PlaceholderColor="#6D3C11"/>
                     <Entry x:Name="EntryNumero" Keyboard="Telephone" Placeholder="Numero de Contacto" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#6D3C11" PlaceholderColor="#6D3C11" />
                     <Button x:Name="Login" Clicked="Login_Clicked" FontSize="Medium" TextColor="#EBE1C9" BorderColor="Black" BackgroundColor="#6D3C11" CornerRadius="15" HorizontalOptions="CenterAndExpand" Text="Iniciar sesión"></Button>
+                    <Button x:Name="btnLogin" IsVisible="False" Clicked="btnLogin_Clicked" FontSize="Medium" TextColor="#EBE1C9" BorderColor="Black" BackgroundColor="#6D3C11" CornerRadius="15" HorizontalOptions="CenterAndExpand" Text="Iniciar sesión"></Button>
+                    <Button x:Name="btnActualizar" Text="Actualizar" IsVisible="False" Clicked="btnActualizar_Clicked" FontSize="Medium" TextColor="#EBE1C9" BorderColor="Black" BackgroundColor="#6D3C11" CornerRadius="15" HorizontalOptions="CenterAndExpand" ></Button>
+                    <Button x:Name="btnEliminar" Text="Eliminar" IsVisible="False" Clicked="btnEliminar_Clicked"  FontSize="Medium" TextColor="red" BorderColor="Black" BackgroundColor="#EBE1C9" CornerRadius="15" HorizontalOptions="CenterAndExpand" ></Button>
                     <!-- <Label x:Name="OlvidoPassword" Text="¿Olvidó su contraseña?" TextColor="#6D3C11" FontSize="15" BackgroundColor="Transparent" HorizontalOptions="Center"/> -->
                     <Label Text=""></Label>
+                </StackLayout>
+                <StackLayout BackgroundColor="#6D3C11">
+                    <StackLayout Margin="45" BackgroundColor="#EBE1C9" Spacing="25">
+                        <Label Margin="15,0,15,0" TextColor="Black" FontAttributes="Bold" Text="Usuarios" HorizontalOptions="Center" FontSize="25"/>
+                        <ListView x:Name="listUsuarios" ItemSelected="listUsuarios_ItemSelected" >
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="{Binding NombreUsuario}" Grid.Row="0" Grid.Column="0" TextColor="Black" />
+                                            <Label Text="{Binding Correo}" Grid.Row="0" Grid.Column="1" TextColor="Black" />
+                                            <Label Text="{Binding Telefono}" Grid.Row="0" Grid.Column="2" TextColor="Black" />
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

@@ -26,7 +26,6 @@
             <Grid>
                 <Path Data="M0,0H375V262.033s-9.025,4.813-55.426-10.71-70.141-83.047-130.3-83.22-83.544,67.7-130.893,83.22S0,262.033,0,262.033Z" 
                       Aspect="Fill" Fill="#6D3C11"/>
-                <Image Source="https://imgur.com/cHHjwAf.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="25"/>
             </Grid>
 
             <!-- Title ***in process*** 
