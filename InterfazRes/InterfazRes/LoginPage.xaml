@@ -8,7 +8,7 @@
             <StackLayout BackgroundColor="#6D3C11">
                 <StackLayout Margin="45" BackgroundColor="#EBE1C9" Spacing="25">
                     <Label Text=""></Label>
-                    <Image Source="https://aumentada.net/wp-content/uploads/2015/05/user.png" HeightRequest="140" WidthRequest="140" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
+                    <Image Source="https://imgur.com/5b5WgAV.png" HeightRequest="140" WidthRequest="140" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
                     <Label Margin="15,0,15,0" TextColor="Black" FontAttributes="Bold" Text="Cuchos Parrilla" HorizontalOptions="Center" FontSize="25"/>
                     <Entry x:Name="EntryIdUsuario" IsVisible="False" />
                     <Entry x:Name="EntryNombre" Placeholder="Nombre Usuario" HorizontalTextAlignment="Center" TextColor="#6D3C11" PlaceholderColor="#6D3C11"/>

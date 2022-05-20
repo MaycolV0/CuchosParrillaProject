@@ -38,7 +38,7 @@
             <StackLayout Grid.Row="1" HorizontalOptions="Center" Margin="0,-140,0,0" Spacing="10">
                 <Grid HeightRequest="210" WidthRequest="210" HorizontalOptions="Center">
                     <Ellipse Stroke="BLACK" StrokeThickness="2" Aspect="Fill"/>
-                    <Image x:Name="BannerImg" Source="IMG02.png" HeightRequest="195" WidthRequest="195" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Image x:Name="BannerImg" Source="https://imgur.com/5b5WgAV.png" HeightRequest="195" WidthRequest="195" HorizontalOptions="Center" VerticalOptions="Center"/>
                 </Grid>
                 <StackLayout HorizontalOptions="Center" Spacing="15">
                     <Label Text="Bienvenido a Cuchos Parrilla" TextColor="Black" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" />
