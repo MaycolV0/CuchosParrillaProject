@@ -28,12 +28,30 @@
 
             <StackLayout Grid.Row="0" HorizontalOptions="Center" Margin="45,0,45,0" Spacing="10">
                 <Label TextColor="Black" FontAttributes="Bold" Text="Datos del pedido" HorizontalOptions="Center" FontSize="25"/>
+                <Entry x:Name="EntryIdProducto" IsVisible="False" />
                 <Entry x:Name="EntryDireccion" Placeholder="Dirección del domicilio" HorizontalTextAlignment="Center" TextColor="Black" PlaceholderColor="#EBE1C9"/>
                 <Entry x:Name="EntryDevuelta" Placeholder="Devuelta de..." Keyboard="Telephone" HorizontalTextAlignment="Center" TextColor="black" PlaceholderColor="#EBE1C9"/>
             </StackLayout>
 
             <StackLayout Grid.Row="1">
-                <Picker Title="Selecciona tu Bebida" TitleColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0">
+                <Picker x:Name="nombreComida" Title="Selecciona tu Comida" TitleColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Camarones</x:String>
+                            <x:String>Hamburguesa Clásica</x:String>
+                            <x:String>Hamburguesa Clásica #2</x:String>
+                            <x:String>Pollo Apanado</x:String>
+                            <x:String>Pollo Apanado #2</x:String>
+                            <x:String>Salchichas</x:String>
+                            <x:String>Taco Ensalada</x:String>
+                            <x:String>Tacos</x:String>
+                            <x:String>Tex-Mex</x:String>
+                            <x:String>Crepes</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Picker x:Name="nombreBebida" Title="Selecciona tu Bebida" TitleColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>Agua</x:String>
@@ -46,19 +64,43 @@
             </StackLayout>
 
             <StackLayout Grid.Row="2" HorizontalOptions="Center" Margin="45,0,45,0" Spacing="10">
-                <TableView>
-                    <TableRoot>
-                        <TableSection Title="Salsas">
-                            <SwitchCell Text="Tomate" />
-                            <SwitchCell Text="Rosada" />
-                            <SwitchCell Text="Piña" />
-                            <SwitchCell Text="BBQ" />
-                            <SwitchCell Text="Ajo" />
-                        </TableSection>
-                    </TableRoot>
-                </TableView>
+
+                <Button x:Name="Registrar" Clicked="Registrar_Clicked" FontSize="Medium" TextColor="#EBE1C9" BorderColor="Black" BackgroundColor="#6D3C11" 
+                        CornerRadius="15" HorizontalOptions="CenterAndExpand" Text="Agregar Pedido"></Button>
+                <Button x:Name="btnActualizar" Text="Actualizar" IsVisible="False" Clicked="btnActualizar_Clicked" FontSize="Medium" TextColor="#EBE1C9"
+                        BorderColor="Black" BackgroundColor="#6D3C11" CornerRadius="15" HorizontalOptions="CenterAndExpand" ></Button>
+                <Button x:Name="btnEliminar" Text="Eliminar" IsVisible="False" Clicked="btnEliminar_Clicked"  FontSize="Medium" TextColor="red" 
+                        BorderColor="Black" BackgroundColor="#EBE1C9" CornerRadius="15" HorizontalOptions="CenterAndExpand" ></Button>
+
+                    <Label Margin="15,0,15,0" TextColor="Black" FontAttributes="Bold" Text="Productos" HorizontalOptions="Center" FontSize="25"/>
+                    <ListView x:Name="listProductos" ItemSelected="listProductos_ItemSelected" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding NombreProducto}" Grid.Row="0" Grid.Column="0" TextColor="Black" />
+                                        <Label Text="{Binding NombreBebida}" Grid.Row="0" Grid.Column="1" TextColor="Black" />
+                                        <Label Text="{Binding DireccionDomicilio}" Grid.Row="0" Grid.Column="2" TextColor="Black" />
+                                        <Label Text="{Binding Devuelta}" Grid.Row="0" Grid.Column="3" TextColor="Black" />
+                                        <Label Text="{Binding Salsas}" Grid.Row="0" Grid.Column="4" TextColor="Black" />
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
             </StackLayout>
-            
+
         </Grid>
     </ScrollView>
 

@@ -15,6 +15,7 @@ namespace InterfazRes.Data
         {
             db = new SQLiteAsyncConnection(dbPath);
             db.CreateTableAsync<Usuario>().Wait();
+            db.CreateTableAsync<Producto>().Wait();
         }
 
         public Task<int> SaveUsuarioAsync(Usuario usr)
@@ -29,9 +30,25 @@ namespace InterfazRes.Data
             }
         }
 
+        public Task<int> SaveProductoAsync(Producto producto)
+        {
+            if (producto.IdProducto != 0)
+            {
+                return db.UpdateAsync(producto);
+            }
+            else
+            {
+                return db.InsertAsync(producto);
+            }
+        }
+
         public Task<int> DeleteUsuarioAsync(Usuario usr)
         {
             return db.DeleteAsync(usr);
+        }
+        public Task<int> DeleteProductoAsync(Producto producto)
+        {
+            return db.DeleteAsync(producto);
         }
 
         /// <summary>
@@ -50,6 +67,16 @@ namespace InterfazRes.Data
         public Task<Usuario> GetUsuarioIdAsync(int IdUsuario)
         {
             return db.Table<Usuario>().Where(a => a.IdUsuario == IdUsuario).FirstOrDefaultAsync();
+        }
+
+        public Task<List<Producto>> GetProductoAsync()
+        {
+            return db.Table<Producto>().ToListAsync();
+        }
+
+        public Task<Producto> GetProductoIdAsync(int IdProducto)
+        {
+            return db.Table<Producto>().Where(a => a.IdProducto == IdProducto).FirstOrDefaultAsync();
         }
     }
 }
